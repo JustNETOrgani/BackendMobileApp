@@ -25,12 +25,13 @@ router.post('/signUp', async (request, response) => {
 })
 
 router.get('/login', async (request, response) => {
-    // Get get password from DB.
+    // Get users from DB.
     try {
          resultsArray =  await users.find()
     } catch (error) {
         console.log('Errror fetching data from DB!', error)
     }
+    // Find the exact username.
     let foundStatus = resultsArray.findIndex(x => x.username === request.body.username)
     if (foundStatus === -1) {
         console.log('Sorry! Not a registered user.')
