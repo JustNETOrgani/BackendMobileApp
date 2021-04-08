@@ -1,0 +1,19 @@
+{
+  "name": "mobileappbackend",
+  "version": "1.0.0",
+  "description": "Backend for first mobile app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "JustNeTorgani",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7"
+  }
+}

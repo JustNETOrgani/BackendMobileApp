@@ -1,0 +1,7 @@
+POST http://localhost:8000/app/signUp
+    Content-Type: application/json
+
+{
+    "username": "jjnet",
+    "password": "jj419"
+}
